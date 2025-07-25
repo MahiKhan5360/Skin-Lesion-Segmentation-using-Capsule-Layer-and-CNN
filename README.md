@@ -23,6 +23,18 @@ The model combines:
 
 ---
 
+
+## Requirements
+
+- TensorFlow ≥ 2.10  
+- Python ≥ 3.8  
+- GPU with ≥ 15 GB VRAM (recommended)  
+- System memory ≥ 16 GB (recommended)
+
+Install required packages:
+
+
+
 ## 📁 Project Structure
 
 ```bash
