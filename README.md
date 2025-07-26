@@ -54,3 +54,11 @@ You need to define and load `train_dataset`, `val_dataset`, and `test_dataset` u
 
 
 
+Where:
+- `s`: Capsule input
+- `v`: Capsule output
+- `||s||`: Euclidean norm of the input vector
+
+This allows capsules to encode the probability and instantiation parameters of features.
+
+
