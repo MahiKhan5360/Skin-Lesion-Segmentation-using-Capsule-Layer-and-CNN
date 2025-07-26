@@ -7,6 +7,7 @@ This repository contains a custom deep learning architecture that integrates Cap
 > ⚠️ **Warning**: The current model is **not memory-efficient** and may crash on systems with **<16 GB system RAM** and **<15 GB GPU memory** (e.g., T4 GPU with 15 GB).
 
 ---
+
 ## 🧠 Model Overview
 
 The model combines:
@@ -39,33 +40,11 @@ Install required packages:
 
 ## 📁 Project Structure
 
-```bash
-├── model.ipynb     # Full model, training, and evaluation script
-├── README.md                   # This file
-
-
-## How to Run
-
-1. Load and preprocess your dataset
-
-You need to define and load `train_dataset`, `val_dataset`, and `test_dataset` using `tf.data.Dataset` or a generator. These datasets should yield images of shape `(256, 256, 3)` and binary masks of shape `(256, 256, 1)`.
-
-2. Train the Model
 
 
 
-Where:
-- `s`: Capsule input
-- `v`: Capsule output
-- `||s||`: Euclidean norm of the input vector
 
-This allows capsules to encode the probability and instantiation parameters of features.
 
-## Training Callbacks
 
-The following callbacks are used:
-- `EarlyStopping`: Monitors `val_loss` and stops if no improvement for 10 epochs
-- `ModelCheckpoint`: Saves the best model based on validation loss
-- `ReduceLROnPlateau`: Reduces learning rate by factor of 0.2 if `val_loss` plateaus
 
 
