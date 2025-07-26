@@ -44,6 +44,13 @@ Install required packages:
 
 
 
+## How to Run
+
+1. Load and preprocess your dataset
+
+You need to define and load `train_dataset`, `val_dataset`, and `test_dataset` using `tf.data.Dataset` or a generator. These datasets should yield images of shape `(256, 256, 3)` and binary masks of shape `(256, 256, 1)`.
+
+2. Train the Model
 
 
 
