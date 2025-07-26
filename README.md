@@ -24,6 +24,8 @@ The model combines:
 ---
 
 
+
+
 ## Requirements
 
 - TensorFlow ≥ 2.10  
@@ -52,13 +54,18 @@ You need to define and load `train_dataset`, `val_dataset`, and `test_dataset` u
 
 
 
-
-
 Where:
 - `s`: Capsule input
 - `v`: Capsule output
 - `||s||`: Euclidean norm of the input vector
 
 This allows capsules to encode the probability and instantiation parameters of features.
+
+## Training Callbacks
+
+The following callbacks are used:
+- `EarlyStopping`: Monitors `val_loss` and stops if no improvement for 10 epochs
+- `ModelCheckpoint`: Saves the best model based on validation loss
+- `ReduceLROnPlateau`: Reduces learning rate by factor of 0.2 if `val_loss` plateaus
 
 
