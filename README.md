@@ -51,3 +51,13 @@ You need to define and load `train_dataset`, `val_dataset`, and `test_dataset` u
 2. Train the Model
 
 
+## Requirements
+
+- TensorFlow ≥ 2.10  
+- Python ≥ 3.8  
+- GPU with ≥ 15 GB VRAM (recommended)  
+- System memory ≥ 16 GB (recommended)
+
+Install required packages:
+
+
