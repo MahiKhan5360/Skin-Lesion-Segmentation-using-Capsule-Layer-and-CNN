@@ -53,5 +53,11 @@ You need to define and load `train_dataset`, `val_dataset`, and `test_dataset` u
 2. Train the Model
 
 
+## Evaluation
 
+After training:
+- The model is evaluated on a separate test dataset
+- Reports `Loss`, `Accuracy`, and `Mean IoU`
+
+Example output:
 
