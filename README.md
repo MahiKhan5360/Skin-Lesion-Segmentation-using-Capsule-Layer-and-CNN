@@ -61,3 +61,4 @@ After training:
 
 Example output:
 
+Test Loss: 0.2183, Test Accuracy: 0.9354, Test IoU: 0.8121
