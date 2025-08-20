@@ -1,5 +1,5 @@
 # Skin-Lesion-Segmentation-using-Capsule-Layer-and-CNN
-Not Memory Efficient Version
+ Memory Efficient Version
 # Capsule-Based CNN for Binary Image Segmentation (ISIC 2018)
 
 This repository contains a custom deep learning architecture that integrates Capsule Networks into a CNN encoder-decoder framework for binary image segmentation (e.g., skin lesion segmentation from dermoscopic images like the ISIC 2018 dataset).
